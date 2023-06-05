@@ -15,11 +15,11 @@ url = "https://twitter.com/i/flow/login"
 driver.get(url)
 
 username = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, 'input[autocomplete="username"]')))
-username.send_keys("adwaithrajeev@gmail.com")
+username.send_keys("username")
 username.send_keys(Keys.ENTER)
 
 password = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, 'input[name="password"]')))
-password.send_keys("AdwaithEzio")
+password.send_keys("password")
 password.send_keys(Keys.ENTER)
 
 time.sleep(10)
